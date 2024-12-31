@@ -1,0 +1,17 @@
+<!-- enrollment/templates/enrollment/course_details.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ course.name }} Details</title>
+</head>
+<body>
+    <h1>{{ course.name }} Details</h1>
+    <h2>Enrolled Students:</h2>
+    <ul>
+        {% for student in students %}
+        <li>{{ student.name }} - {{ student.email }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
